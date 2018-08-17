@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="@string/pref_user_login"
+        android:title="@string/login"
+        android:summary="@string/login_do_provedor_de_vendas"
+        android:inputType="text"
+        android:defaultValue=""/>
+    <EditTextPreference
+        android:key="@string/pref_user_password"
+        android:title="@string/password"
+        android:summary="@string/password_para_logar_no_provedor_de_vendas"
+        android:inputType="textPassword"
+        android:defaultValue=""/>
+    <EditTextPreference
+        android:key="@string/pref_gcm_user_login"
+        android:title="@string/login_gcm"
+        android:summary="@string/login_do_provedor_de_mensagens"
+        android:inputType="text"
+        android:defaultValue=""/>
+    <EditTextPreference
+        android:key="@string/pref_gcm_user_password"
+        android:title="@string/password_gcm"
+        android:summary="@string/password_para_logar_no_provedor_de_mensagens"
+        android:inputType="textPassword"
+        android:defaultValue=""/>
+</PreferenceScreen>

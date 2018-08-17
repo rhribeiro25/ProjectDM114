@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/orderListItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView android:id="@+id/orderListItemId"
+        android:layout_width="0dp"
+        android:layout_margin="4dip"
+        android:layout_weight="0.15"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dip"
+        android:paddingBottom="12dip"
+        android:gravity="center" />
+    <TextView android:id="@+id/orderListFreightPrice"
+        android:layout_width="0dp"
+        android:layout_margin="4dip"
+        android:layout_weight="0.15"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dip"
+        android:paddingBottom="12dip" />
+    <TextView android:id="@+id/orderListNumberItens"
+        android:layout_width="0dp"
+        android:layout_margin="4dip"
+        android:layout_weight="0.70"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dip"
+        android:paddingBottom="12dip"
+        android:gravity="center" />
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="250dip"
+    android:layout_marginBottom="8dip"
+    android:layout_marginLeft="16dip"
+    android:layout_marginRight="16dip"
+    android:layout_marginTop="8dip"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    tools:context="br.com.renan.projetodm114.MainActivity"
+    android:textAlignment="textStart">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginRight="10dp"
+        android:text="Código:"
+        android:textStyle="bold"
+        android:layout_weight="1" />
+
+    <EditText
+        android:id="@+id/editTextProductCode"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginRight="10dp"
+        android:text="Preço:"
+        android:textStyle="bold"
+        android:layout_weight="1" />
+
+    <EditText
+        android:id="@+id/editTextProductPrice"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="Cadastrar"
+        android:id="@+id/button_add"
+        android:layout_weight="0.5"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="Voltar"
+        android:id="@+id/button_back"
+        android:layout_weight="0.5"/>
+
+</LinearLayout>

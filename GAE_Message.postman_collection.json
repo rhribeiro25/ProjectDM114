@@ -1,0 +1,581 @@
+{
+	"info": {
+		"name": "GAE_Message",
+		"_postman_id": "8f6a4d2f-5595-0ade-85a1-dd20b9edfa88",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Users",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "1057e8a9-8c66-4740-8090-69dc058ca0c0",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://message-provider.appspot.com/api/users",
+							"host": [
+								"https://message-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "abe0f676-ed1f-4fa3-b7cc-b3167416fd71",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 5629499534213120,\n    \"email\": \"doralice@siecola.com.br\",\n    \"password\": \"doralice\",\n    \"gcmRegId\": null,\n    \"lastLogin\": null,\n    \"lastGCMRegister\": null,\n    \"role\": \"USER\",\n    \"enabled\": true\n}\n"
+						},
+						"url": {
+							"raw": "https://message-provider.appspot.com/api/users",
+							"host": [
+								"https://message-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Email",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "7d891307-8b75-455e-8921-7039b22bd940",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://message-provider.appspot.com/api/users/byemail?email=doralice@siecola.com.br",
+							"host": [
+								"https://message-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"users",
+								"byemail"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "doralice@siecola.com.br",
+									"equals": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User By Email",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "7d891307-8b75-455e-8921-7039b22bd940",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://message-provider.appspot.com/api/users/byemail?email=doralice@siecola.com.br",
+							"host": [
+								"https://message-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"users",
+								"byemail"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "doralice@siecola.com.br",
+									"equals": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update RegGCM",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "abe0f676-ed1f-4fa3-b7cc-b3167416fd71",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://message-provider.appspot.com/api/users/updatereggcm?email=doralice@siecola.com.br&reggcm=APA91bE7BqRpSsAi8W5cFBcV2CWHEPkesJOwQferQkRvCxaMATrvWkulZMhpuJQe1y4I6I0kHdHVoKcPsqSzjJfqBDxGYsx1bCQ-RHX5Dqnwp_GUHe21Unwj8ynTR0glt6TcY2C4oltbH-7lkKLuhO002RHsRqzZfw",
+							"host": [
+								"https://message-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"users",
+								"updatereggcm"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "doralice@siecola.com.br",
+									"equals": true
+								},
+								{
+									"key": "reggcm",
+									"value": "APA91bE7BqRpSsAi8W5cFBcV2CWHEPkesJOwQferQkRvCxaMATrvWkulZMhpuJQe1y4I6I0kHdHVoKcPsqSzjJfqBDxGYsx1bCQ-RHX5Dqnwp_GUHe21Unwj8ynTR0glt6TcY2C4oltbH-7lkKLuhO002RHsRqzZfw",
+									"equals": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order Info",
+			"description": "",
+			"item": [
+				{
+					"name": "Send Order Info",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "abe0f676-ed1f-4fa3-b7cc-b3167416fd71",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"email\": \"doralice@siecola.com.br\",\n    \"status\": \"status pedido\",\n    \"reason\": \"reason pedido\"\n}"
+						},
+						"url": {
+							"raw": "https://message-provider.appspot.com/api/orderinfo",
+							"host": [
+								"https://message-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"orderinfo"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product Of Interest",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Products of Interest",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "1057e8a9-8c66-4740-8090-69dc058ca0c0",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://message-provider.appspot.com/api/products",
+							"host": [
+								"https://message-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Products of Interest",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "1057e8a9-8c66-4740-8090-69dc058ca0c0",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"2\",\n    \"price\": 10,\n    \"email\": \"doralice@siecola.com.br\"\n}"
+						},
+						"url": {
+							"raw": "https://message-provider.appspot.com/api/products",
+							"host": [
+								"https://message-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Products of Interest by Email",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "1057e8a9-8c66-4740-8090-69dc058ca0c0",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": 1,\n    \"price\": 25,\n    \"email\": \"doralice@siecola.com.br\"\n}"
+						},
+						"url": {
+							"raw": "https://message-provider.appspot.com/api/products/byemail?email=doralice@siecola.com.br",
+							"host": [
+								"https://message-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"products",
+								"byemail"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "doralice@siecola.com.br",
+									"equals": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Products of Interest by Id",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "1057e8a9-8c66-4740-8090-69dc058ca0c0",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": 1,\n    \"price\": 25,\n    \"email\": \"doralice@siecola.com.br\"\n}"
+						},
+						"url": {
+							"raw": "https://message-provider.appspot.com/api/products/5707702298738688",
+							"host": [
+								"https://message-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"products",
+								"5707702298738688"
+							]
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "Notify Products of Interest",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "1057e8a9-8c66-4740-8090-69dc058ca0c0",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": 1,\n    \"price\": 25,\n    \"email\": \"doralice@siecola.com.br\"\n}"
+						},
+						"url": {
+							"raw": "https://message-provider.appspot.com/api/products/notify/1/5",
+							"host": [
+								"https://message-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"products",
+								"notify",
+								"1",
+								"5"
+							]
+						},
+						"description": null
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

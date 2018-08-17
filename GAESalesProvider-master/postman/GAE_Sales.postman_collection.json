@@ -1,0 +1,642 @@
+{
+	"info": {
+		"name": "GAE_Sales",
+		"_postman_id": "4ce16d0b-91c5-3c4b-d1db-f9de3018feab",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Users",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "674c81a0-4c6a-455f-88a2-cf64be4bcc64",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://sales-provider.appspot.com/api/users",
+							"host": [
+								"https://sales-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "674c81a0-4c6a-455f-88a2-cf64be4bcc64",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 5629499534213120,\n    \"email\": \"doralice@siecola.com.br\",\n    \"password\": \"doralice\",\n    \"gcmRegId\": null,\n    \"lastLogin\": null,\n    \"lastGCMRegister\": null,\n    \"role\": \"USER\",\n    \"enabled\": true\n}\n"
+						},
+						"url": {
+							"raw": "https://sales-provider.appspot.com/api/users",
+							"host": [
+								"https://sales-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Email",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "7d891307-8b75-455e-8921-7039b22bd940",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://sales-provider.appspot.com/api/users/byemail?email=doralice@siecola.com.br",
+							"host": [
+								"https://sales-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"users",
+								"byemail"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "doralice@siecola.com.br",
+									"equals": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User By Email",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "7d891307-8b75-455e-8921-7039b22bd940",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://sales-provider.appspot.com/api/users/byemail?email=doralice@siecola.com.br",
+							"host": [
+								"https://sales-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"users",
+								"byemail"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "doralice@siecola.com.br",
+									"equals": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Products",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "674c81a0-4c6a-455f-88a2-cf64be4bcc64",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://sales-provider.appspot.com/api/products",
+							"host": [
+								"https://sales-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "674c81a0-4c6a-455f-88a2-cf64be4bcc64",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"product2\",\n    \"description\": \"description2\",\n    \"code\": \"COD2\",\n    \"price\": 20\n}"
+						},
+						"url": {
+							"raw": "https://sales-provider.appspot.com/api/products",
+							"host": [
+								"https://sales-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product by Code",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "4b7c2eb0-1778-49fd-8d7f-0d7a3ea57191",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"product3\",\n    \"description\": \"description3\",\n    \"code\": \"COD3\",\n    \"price\": 30\n}"
+						},
+						"url": {
+							"raw": "https://sales-provider.appspot.com/api/products/COD1",
+							"host": [
+								"https://sales-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"products",
+								"COD1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Orders",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "674c81a0-4c6a-455f-88a2-cf64be4bcc64",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://sales-provider.appspot.com/api/orders",
+							"host": [
+								"https://sales-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Order",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "674c81a0-4c6a-455f-88a2-cf64be4bcc64",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n    \"email\": \"doralice@siecola.com.br\",\n    \"freightPrice\": 40,\n    \"orderItems\": [\n    \t{\n    \t\t\"productId\": 5707702298738688\n    \t},\n    \t{\n    \t\t\"productId\": 5668600916475904\n    \t}\n\t]\n}\n"
+						},
+						"url": {
+							"raw": "https://sales-provider.appspot.com/api/orders",
+							"host": [
+								"https://sales-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "674c81a0-4c6a-455f-88a2-cf64be4bcc64",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n    \"email\": \"doralice@siecola.com.br\",\n    \"freightPrice\": 20,\n    \"orderItems\": [\n    \t{\n    \t\t\"productId\": 4785074604081152\n    \t},\n    \t{\n    \t\t\"productId\": 5910974510923776\n    \t}\n\t]\n}\n"
+						},
+						"url": {
+							"raw": "https://sales-provider.appspot.com/api/orders/5668600916475904",
+							"host": [
+								"https://sales-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"orders",
+								"5668600916475904"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order by Email",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "674c81a0-4c6a-455f-88a2-cf64be4bcc64",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n    \"email\": \"doralice@siecola.com.br\",\n    \"freightPrice\": 20,\n    \"orderItems\": [\n    \t{\n    \t\t\"productId\": 4785074604081152\n    \t},\n    \t{\n    \t\t\"productId\": 5910974510923776\n    \t}\n\t]\n}\n"
+						},
+						"url": {
+							"raw": "https://sales-provider.appspot.com/api/orders/byemail?email=doralice@siecola.com.br",
+							"host": [
+								"https://sales-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"orders",
+								"byemail"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "doralice@siecola.com.br",
+									"equals": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Order",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "674c81a0-4c6a-455f-88a2-cf64be4bcc64",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n    \"email\": \"doralice@siecola.com.br\",\n    \"freightPrice\": 20,\n    \"orderItems\": [\n    \t{\n    \t\t\"productId\": 4785074604081152\n    \t},\n    \t{\n    \t\t\"productId\": 5910974510923776\n    \t}\n\t]\n}\n"
+						},
+						"url": {
+							"raw": "https://sales-provider.appspot.com/api/orders/5707702298738688",
+							"host": [
+								"https://sales-provider.appspot.com"
+							],
+							"path": [
+								"api",
+								"orders",
+								"5707702298738688"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic c2llY29sYTptYXRpbGRl"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "grant_type=password&username=matilde@siecola.com.br&password=matilde"
+				},
+				"url": {
+					"raw": "http://sales-provider.appspot.com/oauth/token",
+					"protocol": "http",
+					"host": [
+						"sales-provider",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

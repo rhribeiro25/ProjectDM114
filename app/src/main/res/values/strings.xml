@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Virtual Store</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Configurações</string>
+
+    <string	name="pref_ws_host">pref_ws_host</string>
+    <string	name="pref_ws_port">pref_ws_port</string>
+    <string	name="pref_ws_access_token">pref_ws_access_token</string>
+    <string	name="pref_ws_access_token_expiration">pref_ws_access_token_expiration</string>
+    <string	name="pref_ws_default_host">http://sales-provider.appspot.com</string>
+    <string	name="pref_ws_default_port">80</string>
+    <string	name="pref_ws_default_username">renan@dm114.com.br</string>
+    <string	name="pref_ws_default_password">inatel</string>
+    <string	name="pref_host_address">Address</string>
+    <string	name="pref_host_port">Port</string>
+
+    <string name="pref_user_login">pref_user_login</string>
+    <string name="pref_user_password">pref_user_password</string>
+    <string name="login">Login</string>
+    <string name="login_do_provedor_de_vendas">
+    Login do provedor de vendas</string>
+    <string name="password">Password</string>
+    <string name="password_para_logar_no_provedor_de_vendas">
+    Password para logar no provedor de vendas</string>
+    <string name="token">Token</string>
+    <string name="token_do_provedor_de_vendas">
+    Token do provedor de vendas</string>
+
+    <string name="pref_gcm_user_login">pref_gcm_user_login</string>
+    <string name="pref_gcm_user_password">pref_gcm_user_password</string>
+    <string name="login_gcm">Login GCM</string>
+    <string name="login_do_provedor_de_mensagens">
+    Login do provedor de mensagens</string>
+    <string name="password_gcm">Password GCM</string>
+    <string name="password_para_logar_no_provedor_de_mensagens">
+    Password para logar no provedor de mensagens</string>
+
+    <string name="pref_gcm_access_token">pref_gcm_access_token</string>
+    <string name="pref_gcm_access_token_expiration">pref_gcm_access_token_expiration</string>
+    <string name="pref_gcm_default_host">http://message-provider.appspot.com</string>
+    <string name="pref_gcm_default_port">80</string>
+    <string name="pref_gcm_default_username">renan@dm114.com.br</string>
+    <string name="pref_gcm_default_password">inatel</string>
+    <string name="pref_gcm_host">pref_gcm_host</string>
+    <string name="sender_id">574033931406</string>
+</resources>
